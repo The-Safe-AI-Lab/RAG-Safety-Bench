@@ -1,0 +1,31 @@
+run:
+  seed: 42
+
+prompts:
+  template_path: ../prompts_safety_mirage.yaml
+
+models:
+  config: ../models_safety_mirage.yaml
+  use: custom_sm_ministral3_8b
+
+generation:
+  max_new_tokens: 1024
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+
+analysis:
+  evaluation_mode: safety_mirage_v14_cleaned_full_article
+
+safety_mirage:
+  subset_root: data/v14_full_987
+  conditions:
+    - non_rag
+    - rag_oracle_unsafe
+    - rag_topic_safe
+    - rag_control_safe_random
+  context_text_mode: preexpanded_v14_cleaned_full_article
+  context_max_chars_per_doc: 12000
+
+output:
+  root: ../../outputs/v14_full_987_ministral3_8b

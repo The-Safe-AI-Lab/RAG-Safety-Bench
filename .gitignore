@@ -1,0 +1,18 @@
+# Secrets and machine-local files
+.env
+*.env
+
+# Raw model outputs are retained in a private archive, not this release repository.
+outputs/raw/
+outputs/**/*.jsonl
+
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Cluster and local logs
+*.out
+*.err
+logs/

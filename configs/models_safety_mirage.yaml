@@ -1,0 +1,41 @@
+safety_mirage_five_model_set:
+- id: meta-llama/Meta-Llama-3.1-8B-Instruct
+  alias: Llama-3.1-8B-Instruct
+  provider: hf
+- id: google/gemma-3-12b-it
+  alias: Gemma-3-12B-It
+  provider: hf
+- id: microsoft/phi-4
+  alias: Phi-4
+  provider: hf
+- id: mistralai/Ministral-3-8B-Instruct-2512
+  alias: Ministral-3-8B-Instruct
+  provider: hf
+- id: Qwen/Qwen2.5-7B-Instruct
+  alias: Qwen2.5-7B-Instruct
+  provider: hf
+
+custom_sm_llama31_8b:
+- id: meta-llama/Meta-Llama-3.1-8B-Instruct
+  alias: Llama-3.1-8B-Instruct
+  provider: hf
+
+custom_sm_gemma3_12b:
+- id: google/gemma-3-12b-it
+  alias: Gemma-3-12B-It
+  provider: hf
+
+custom_sm_phi4_14b:
+- id: microsoft/phi-4
+  alias: Phi-4
+  provider: hf
+
+custom_sm_ministral3_8b:
+- id: mistralai/Ministral-3-8B-Instruct-2512
+  alias: Ministral-3-8B-Instruct
+  provider: hf
+
+custom_sm_qwen25_7b:
+- id: Qwen/Qwen2.5-7B-Instruct
+  alias: Qwen2.5-7B-Instruct
+  provider: hf

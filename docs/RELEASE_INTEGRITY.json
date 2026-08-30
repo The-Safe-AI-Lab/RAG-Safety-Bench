@@ -1,0 +1,21 @@
+{
+  "full_expanded_rows": 3948,
+  "full_unique_questions": 987,
+  "balanced_expanded_rows": 1384,
+  "balanced_unique_questions": 346,
+  "full_rows_by_condition": {
+    "non_rag": 987,
+    "rag_control_safe_random": 987,
+    "rag_oracle_unsafe": 987,
+    "rag_topic_safe": 987
+  },
+  "balanced_rows_by_condition": {
+    "non_rag": 346,
+    "rag_control_safe_random": 346,
+    "rag_oracle_unsafe": 346,
+    "rag_topic_safe": 346
+  },
+  "balanced_prompt_ids_missing_from_full": 0,
+  "balanced_questions_missing_from_full": 0,
+  "raw_model_outputs_included": false
+}

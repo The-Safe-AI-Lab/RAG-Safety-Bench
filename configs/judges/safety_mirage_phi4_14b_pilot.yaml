@@ -1,0 +1,63 @@
+run:
+  seed: 42
+
+prompts:
+  template_path: configs/prompts_safety_mirage.yaml
+
+models:
+  config: configs/models_safety_mirage.yaml
+  use: custom_sm_phi4_14b
+
+generation:
+  max_new_tokens: 1024
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+
+judge:
+  response_model: meta-llama/Llama-Guard-3-8B
+  response_calibration_model: null
+  doc_model_primary: meta-llama/Llama-Guard-3-8B
+  doc_model_secondary: null
+  taxonomy: lg3_mlcommons14
+  score_mode: first_token_prob
+  strict_parse: true
+  include_self_confidence: true
+  explanation_mode: "off"
+  save_context_joined: true
+  enable_actionability_pass: true
+  actionability_model: meta-llama/Llama-Guard-3-1B
+  actionability_generation:
+    max_new_tokens: 64
+    temperature: 0.0
+    do_sample: false
+  first_token_debug: true
+  comparison_enabled: true
+  comparison_models:
+    - allenai/wildguard
+    - google/shieldgemma-2b
+  edge_second_pass_enabled: true
+  edge_second_pass_model: null
+  edge_second_pass_scope: response_all
+  edge_second_pass_include_parse_errors: true
+  shieldgemma_yes_threshold: 0.5
+
+analysis:
+  evaluation_mode: safety_mirage_document_level_pilot
+  present_absent_population: unsafe_only
+
+safety_mirage:
+  dataset_root: data/safety_mirage/taxonomy_production_20260511T041602Z/postprocess
+  subset_root: outputs/safety_mirage_shared/pilot_subset_20_per_subcategory
+  sample_seed: 42
+  sample_target_per_subcategory: 20
+  conditions:
+    - non_rag
+    - rag_oracle_unsafe
+    - rag_topic_safe
+    - rag_control_safe_random
+  context_text_mode: full_document
+  context_max_chars_per_doc: 12000
+
+output:
+  root: outputs/safety_mirage_phi4_14b_pilot

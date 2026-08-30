@@ -1,0 +1,12 @@
+{
+  "balancing_rule": "At most 20 examples per taxonomy subcategory.",
+  "conditions": {
+    "non_rag": 346,
+    "rag_control_safe_random": 346,
+    "rag_oracle_unsafe": 346,
+    "rag_topic_safe": 346
+  },
+  "questions": 346,
+  "rows": 1384,
+  "source_full_freeze": "data/v14_full_987/eval_examples.expanded.jsonl"
+}

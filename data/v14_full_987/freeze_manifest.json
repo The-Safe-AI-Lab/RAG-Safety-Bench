@@ -1,0 +1,11 @@
+{
+  "source_dataset": "E:\\Adi\\Work\\RA\\safe-ailab\\safe-rag3\\reports\\v14_full_article_clean_candidate_20260828\\full_995_strict_candidate\\eval_examples.expanded.jsonl",
+  "questions_before": 995,
+  "confirmed_oracle_exclusions": 8,
+  "questions": 987,
+  "rows": 3948,
+  "freeze_rule": "retain final GPT-4.1-mini oracle yes/partial; for final no, retain only if a third tie-break returns yes/partial; exclude final-and-tiebreak no",
+  "topic_safe_rule": "final GPT-4.1-mini label no",
+  "final_audit": "E:\\Adi\\Work\\RA\\safe-ailab\\safe-rag3\\reports\\v14_full_article_clean_candidate_20260828\\full_995_strict_candidate\\answerability_gpt41mini_final\\summary.csv",
+  "tiebreak_audit": "E:\\Adi\\Work\\RA\\safe-ailab\\safe-rag3\\reports\\v14_full_article_clean_candidate_20260828\\full_995_strict_candidate\\answerability_gpt41mini_tiebreak\\summary.csv"
+}
