@@ -7,4 +7,6 @@
 *.json text eol=lf
 *.csv text eol=lf
 *.jsonl text eol=lf
+*.cff text eol=lf
+*.png binary
 data/v14_full_987/eval_examples.expanded.jsonl filter=lfs diff=lfs merge=lfs -text
