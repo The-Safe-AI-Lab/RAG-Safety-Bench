@@ -16,3 +16,9 @@ __pycache__/
 *.out
 *.err
 logs/
+
+# Local manuscript-only helpers and rendered sensitive examples.
+/scripts/build_camera_ready_figures.py
+/scripts/render_table6_example.py
+/table6_example*.json
+/table6_example*.txt

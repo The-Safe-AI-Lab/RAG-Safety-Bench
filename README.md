@@ -1,6 +1,6 @@
 # RAG-Safety-Bench
 
-RAG-Safety-Bench is a controlled benchmark and evaluation package for studying language-model safety under retrieval-augmented generation (RAG). 
+RAG-Safety-Bench is a controlled benchmark and evaluation package for studying language-model safety under retrieval-augmented generation (RAG). It evaluates identical unsafe requests across four retrieval conditions.
 
 ## Camera-ready release scope
 
@@ -24,10 +24,14 @@ See `docs/CONDITIONS.md` and `docs/DATA_CARD.md` for definitions, provenance, an
 
 ## Reproducibility
 
-The  configurations use cleaned full-article-prefix contexts capped at 12,000 characters per document and a deterministic generation configuration (`temperature: 0.0`, `max_new_tokens: 1024`). Run-specific generation configuration files are under `configs/v14_full/` and `configs/v14_balanced/`. The five local standard-judge configurations used for the rerun are under `configs/judges/`.
+The v14 configurations use cleaned full-article-prefix contexts capped at 12,000 characters per document and a deterministic generation configuration (`temperature: 0.0`, `top_p: 1.0`, `max_new_tokens: 1024`). Run-specific generation configuration files are under `configs/v14_full/` and `configs/v14_balanced/`.
 
-Raw model responses and judge artifacts are retained in a private archive while release/access arrangements are finalized. This repository will contain final paper-facing aggregate results and associated v2 scoring artifacts once they are frozen.
+Raw model responses, judge traces, and rescored `unsafe_majority_v2` artifacts are intentionally not included. They contain sensitive model outputs and the v2 rescore workflow is maintained separately. The included local judge configurations are implementation examples, not a substitute for the paper's private v2-rescoring artifacts. Paper-facing figures are available in `results/paper_figures/`.
 
 ## Citation
 
-Citation metadata will be added with the final camera-ready title and author list.
+See [`CITATION.cff`](CITATION.cff). The arXiv identifier will be added after the preprint is public.
+
+## License
+
+The benchmark includes Wikipedia-derived contextual material. The recommended release is a split license: CC BY-SA 4.0 for benchmark data and MIT for the original code. See [`docs/LICENSING.md`](docs/LICENSING.md); final license files will be added after author approval.

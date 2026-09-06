@@ -2,7 +2,7 @@
 
 ## Intended use
 
-MIRAGE-Safety supports controlled research on safety behavior of retrieval-augmented language models. It is not intended to provide operational guidance for harmful activities.
+RAG-Safety-Bench supports controlled research on safety behavior of retrieval-augmented language models. It is not intended to provide operational guidance for harmful activities.
 
 ## Data composition
 
@@ -14,8 +14,8 @@ The v14 full set includes frozen manifests and oracle-audit decision records in 
 
 ## Sensitive content and access
 
-The benchmark contains harmful requests and retrieved contextual material for safety evaluation. Users must follow their institutional policies, applicable law, and model-provider rules. Raw generated model responses and judge traces are intentionally excluded from this public release package pending final access arrangements; aggregate paper results and provenance are retained here.
+The benchmark contains harmful requests and retrieved contextual material for safety evaluation. Users must follow their institutional policies, applicable law, and model-provider rules. Raw generated model responses, judge traces, and rescored v2 artifacts are intentionally excluded from this public release because they include sensitive model outputs and are maintained separately. The released package provides the benchmark inputs, manifests, and generation configurations needed to run an independent evaluation.
 
 ## Limitations
 
-Automated safety judges can disagree substantially. Paper-facing analyses should use the frozen scoring protocol and report individual judge results alongside the defined aggregation.
+Automated safety judges can disagree substantially. The paper reports a separately maintained v2 aggregation; users running the included standard local scoring pipeline should report its outputs independently rather than treating them as the paper's v2 results.

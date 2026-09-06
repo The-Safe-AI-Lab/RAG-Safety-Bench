@@ -7,6 +7,8 @@ rank_bm25>=0.2.2
 accelerate>=0.30
 safetensors>=0.4
 tqdm>=4.66
+numpy>=1.26
+matplotlib>=3.8
 ir-datasets>=0.5.8
 
 # Optional providers

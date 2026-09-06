@@ -1,3 +1,3 @@
 # Raw outputs
 
-Raw model responses and judge traces are intentionally not included in this repository at this stage. They are retained in a private project archive. The paper-facing aggregate results will be placed in `results/v2/` after the scoring workflow is finalized.
+Raw model responses, judge traces, and rescored v2 artifacts are intentionally excluded from this public release because they contain sensitive model outputs and are maintained in a private archive. See `results/paper_figures/` for paper-facing visual assets.
