@@ -3,8 +3,8 @@ message: "If you use RAG-Safety-Bench, please cite this work."
 title: "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety"
 type: dataset
 authors:
-  - family-names: "Saravanan"
-    given-names: "Adithiyan Rajan Indira"
+  - family-names: "Indira Saravanan"
+    given-names: "Adithiyan Rajan"
     affiliation: "University of Ottawa"
   - family-names: "Fraser"
     given-names: "Kathleen C."
@@ -15,8 +15,8 @@ preferred-citation:
   type: article
   title: "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety"
   authors:
-    - family-names: "Saravanan"
-      given-names: "Adithiyan Rajan Indira"
+    - family-names: "Indira Saravanan"
+      given-names: "Adithiyan Rajan"
     - family-names: "Fraser"
       given-names: "Kathleen C."
   year: 2026
