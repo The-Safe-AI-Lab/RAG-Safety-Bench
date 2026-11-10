@@ -59,4 +59,4 @@ Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## License
 
-The benchmark includes Wikipedia-derived contextual material. The recommended release is a split license: CC BY-SA 4.0 for benchmark data and MIT for the original code. See [`docs/LICENSING.md`](docs/LICENSING.md); final license files will be added after author approval.
+Code and configuration are released under the [MIT License](LICENSE-CODE). Benchmark data, documentation, and figures are released under [CC BY-SA 4.0](LICENSE-DATA), because the retrieved contexts are derived from Wikipedia. See [`docs/LICENSING.md`](docs/LICENSING.md) for details.
