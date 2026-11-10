@@ -12,11 +12,23 @@ authors:
 repository-code: "https://github.com/The-Safe-AI-Lab/RAG-Safety-Bench"
 date-released: 2026-09-05
 preferred-citation:
-  type: article
+  type: conference-paper
   title: "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety"
   authors:
     - family-names: "Indira Saravanan"
       given-names: "Adithiyan Rajan"
     - family-names: "Fraser"
       given-names: "Kathleen C."
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+  conference:
+    name: "2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+    city: "Budapest"
+    country: "HU"
+  publisher:
+    name: "Association for Computational Linguistics"
+  start: 51088
+  end: 51111
+  month: 10
   year: 2026
+  doi: "10.18653/2026.emnlp-main.2246"
+  url: "https://aclanthology.org/2026.emnlp-main.2246/"

@@ -30,7 +30,32 @@ Raw model responses, judge traces, and rescored `unsafe_majority_v2` artifacts a
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). The arXiv identifier will be added after the preprint is public.
+The paper is published in the EMNLP 2026 main conference:
+[RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety](https://aclanthology.org/2026.emnlp-main.2246/).
+If you use RAG-Safety-Bench, please cite:
+
+```bibtex
+@inproceedings{saravanan-fraser-2026-rag,
+    title = "{RAG}-Safety-Bench: Reliable Evaluation of Retrieval-Augmented {LLM} Safety",
+    author = "Saravanan, Adithiyan Rajan Indira  and
+      Fraser, Kathleen C.",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Junyi Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.2246/",
+    doi = "10.18653/2026.emnlp-main.2246",
+    pages = "51088--51111",
+    ISBN = "979-8-89176-459-0",
+}
+```
+
+Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## License
 
